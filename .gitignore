@@ -20,5 +20,6 @@ libpng.pc
 libpng16.pc
 src/.deps/
 src/main_c-main.o
+src/main_c
 zlib.pc
 

@@ -10,9 +10,7 @@ class ReusepcConan(ConanFile):
 
     def build(self):
         import_pcs_and_patch(self, ["zlib", "libpng"])
-        build_env = AutoToolsBuildEnvironment(self)
         env_vars = {"PKG_CONFIG_PATH": os.getcwd()}
-        env_vars.update(build_env.vars)
         with tools.environment_append(env_vars):
             with tools.chdir(self.conanfile_directory):
                 self.run('autoreconf --install')
