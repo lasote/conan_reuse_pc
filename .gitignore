@@ -14,3 +14,11 @@ config.log
 config.status
 autom4te.cache
 autom4te.cache/*
+conanbuildinfo.txt
+conaninfo.txt
+libpng.pc
+libpng16.pc
+src/.deps/
+src/main_c-main.o
+zlib.pc
+
