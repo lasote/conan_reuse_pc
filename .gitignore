@@ -1,4 +1,5 @@
 build
+build/*
 *.pyc
 Makefile.in
 aclocal.m4
@@ -11,3 +12,5 @@ missing
 Makefile
 config.log
 config.status
+autom4te.cache
+autom4te.cache/*
